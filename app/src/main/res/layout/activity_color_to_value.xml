@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ValueToColorActivity">
+
+        <TextView
+            android:id="@+id/color_title_text_View"
+            style="@style/textViewTitle.H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/optionConver"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/color_ttitle_route_text_view"
+            style="@style/textViewTitle.H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/colorToValue"
+            app:layout_constraintEnd_toEndOf="@+id/color_title_text_View"
+            app:layout_constraintStart_toStartOf="@+id/color_title_text_View"
+            app:layout_constraintTop_toBottomOf="@+id/color_title_text_View" />
+
+        <ImageView
+            android:id="@+id/resister_vertical_image_view"
+            android:layout_width="178dp"
+            android:layout_height="414dp"
+            android:layout_marginTop="64dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/color_ttitle_route_text_view"
+            app:srcCompat="@drawable/resistorv"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/color_band1_image_view"
+            android:layout_width="105dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="96dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="@+id/resister_vertical_image_view"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/resister_vertical_image_view"
+            app:layout_constraintTop_toTopOf="@+id/resister_vertical_image_view"
+            app:srcCompat="@drawable/bandcolor"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/color_band2_image_view"
+            android:layout_width="83dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="44dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="@+id/resister_vertical_image_view"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="@+id/resister_vertical_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/color_band1_image_view"
+            app:srcCompat="@drawable/bandcolor"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/color_multiplier_image_view"
+            android:layout_width="82dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="@+id/resister_vertical_image_view"
+            app:layout_constraintHorizontal_bias="0.479"
+            app:layout_constraintStart_toStartOf="@+id/resister_vertical_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/color_band2_image_view"
+            app:srcCompat="@drawable/bandcolor"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/color_tolerance_image_view"
+            android:layout_width="105dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="44dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="@+id/resister_vertical_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/resister_vertical_image_view"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/resister_vertical_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/color_multiplier_image_view"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/bandcolor"
+            tools:ignore="ImageContrastCheck" />
+
+        <Spinner
+            android:id="@+id/color_tolerance_spinner"
+            android:layout_width="164dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:entries="@array/color_tolerance"
+            app:layout_constraintEnd_toEndOf="@+id/color_multiplier_spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/color_multiplier_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/color_multiplier_spinner" />
+
+        <Spinner
+            android:id="@+id/color_band2_spinner"
+            android:layout_width="164dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/color_band"
+            app:layout_constraintEnd_toEndOf="@+id/color_band1_spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/color_band1_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/color_band1_spinner"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Spinner
+            android:id="@+id/color_multiplier_spinner"
+            android:layout_width="164dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:entries="@array/color_multiplier"
+            app:layout_constraintEnd_toEndOf="@+id/color_band2_spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/color_band2_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/color_band2_spinner" />
+
+        <Spinner
+            android:id="@+id/color_band1_spinner"
+            android:layout_width="164dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/color_band"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toEndOf="@+id/resister_vertical_image_view"
+            app:layout_constraintTop_toTopOf="@+id/resister_vertical_image_view"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/color_solution_texr_view"
+            style="@style/textViewTitle.H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/voidText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/color_ttitle_route_text_view" />
+
+        <Button
+            android:id="@+id/color_calculate_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.463"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/color_tolerance_spinner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

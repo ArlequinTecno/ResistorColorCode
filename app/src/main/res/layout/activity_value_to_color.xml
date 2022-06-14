@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ValueToColorActivity">
+
+        <TextView
+            android:id="@+id/color_title_text_View"
+            style="@style/textViewTitle.H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/optionConver"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/color_ttitle_route_text_view"
+            style="@style/textViewTitle.H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/valueToColor"
+            app:layout_constraintEnd_toEndOf="@+id/color_title_text_View"
+            app:layout_constraintStart_toStartOf="@+id/color_title_text_View"
+            app:layout_constraintTop_toBottomOf="@+id/color_title_text_View" />
+
+        <ImageView
+            android:id="@+id/resister_image_view"
+            android:layout_width="318dp"
+            android:layout_height="209dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/color_ttitle_route_text_view"
+            app:srcCompat="@drawable/resistencia"
+            tools:ignore="ImageContrastCheck"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/band1_text_view"
+            style="@style/textViewTitle.H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/band1"
+            app:layout_constraintBottom_toBottomOf="@+id/band1_spinner"
+            app:layout_constraintEnd_toStartOf="@+id/band1_spinner"
+            app:layout_constraintHorizontal_bias="0.032"
+            app:layout_constraintStart_toStartOf="@+id/resister_image_view"
+            app:layout_constraintTop_toTopOf="@+id/band1_spinner"
+            app:layout_constraintVertical_bias="0.517" />
+
+        <Spinner
+            android:id="@+id/band1_spinner"
+            android:layout_width="108dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/digits_list"
+            app:layout_constraintEnd_toEndOf="@+id/resister_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/resister_image_view"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/band2_text_view"
+            style="@style/textViewTitle.H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/band2"
+            app:layout_constraintBottom_toBottomOf="@+id/band2_spinner"
+            app:layout_constraintEnd_toStartOf="@+id/band2_spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/band1_text_view"
+            app:layout_constraintTop_toTopOf="@+id/band2_spinner" />
+
+        <Spinner
+            android:id="@+id/band2_spinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/digits_list"
+            app:layout_constraintEnd_toEndOf="@+id/band1_spinner"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/band1_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/band1_spinner" />
+
+        <TextView
+            android:id="@+id/multiplier_text_view"
+            style="@style/textViewTitle.H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplier"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplier_spinner"
+            app:layout_constraintEnd_toStartOf="@+id/multiplier_spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/band2_text_view"
+            app:layout_constraintTop_toTopOf="@+id/multiplier_spinner" />
+
+        <Spinner
+            android:id="@+id/multiplier_spinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/multiplier_list"
+            app:layout_constraintEnd_toEndOf="@+id/band2_spinner"
+            app:layout_constraintStart_toStartOf="@+id/band2_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/band2_spinner" />
+
+        <TextView
+            android:id="@+id/tolerance_text_view"
+            style="@style/textViewTitle.H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tolerance"
+            app:layout_constraintBottom_toBottomOf="@+id/tolerance_spinner"
+            app:layout_constraintEnd_toStartOf="@+id/tolerance_spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/multiplier_text_view"
+            app:layout_constraintTop_toTopOf="@+id/tolerance_spinner"
+            app:layout_constraintVertical_bias="0.517" />
+
+        <Spinner
+            android:id="@+id/tolerance_spinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/tolerance_list"
+            app:layout_constraintEnd_toEndOf="@+id/multiplier_spinner"
+            app:layout_constraintStart_toStartOf="@+id/multiplier_spinner"
+            app:layout_constraintTop_toBottomOf="@+id/multiplier_spinner" />
+
+        <Button
+            android:id="@+id/calculate_VTC_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="284dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resister_image_view" />
+
+        <TextView
+            android:id="@+id/value_numeric_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/voidText"
+            app:layout_constraintBottom_toBottomOf="@+id/resister_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/resister_image_view"
+            app:layout_constraintStart_toStartOf="@+id/resister_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/color_ttitle_route_text_view"
+            app:layout_constraintVertical_bias="0.929" />
+
+        <ImageView
+            android:id="@+id/band1_image_view"
+            android:layout_width="15dp"
+            android:layout_height="79dp"
+            android:layout_marginStart="76dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="@+id/resister_image_view"
+            app:layout_constraintStart_toStartOf="@+id/resister_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/color_ttitle_route_text_view"
+            app:layout_constraintVertical_bias="0.528"
+            app:srcCompat="@drawable/bandcolor"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/band2_image_view"
+            android:layout_width="19dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="@+id/band1_image_view"
+            app:layout_constraintStart_toEndOf="@+id/band1_image_view"
+            app:layout_constraintTop_toTopOf="@+id/band1_image_view"
+            app:layout_constraintVertical_bias="0.437"
+            app:srcCompat="@drawable/bandcolor"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/multiplier_image_view"
+            android:layout_width="19dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="@+id/band2_image_view"
+            app:layout_constraintStart_toEndOf="@+id/band2_image_view"
+            app:layout_constraintTop_toTopOf="@+id/band2_image_view"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/bandcolor"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/tolerance_image_view"
+            android:layout_width="28dp"
+            android:layout_height="79dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="@+id/multiplier_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/resister_image_view"
+            app:layout_constraintHorizontal_bias="0.279"
+            app:layout_constraintStart_toEndOf="@+id/multiplier_image_view"
+            app:layout_constraintTop_toTopOf="@+id/multiplier_image_view"
+            app:layout_constraintVertical_bias="0.454"
+            app:srcCompat="@drawable/bandcolor"
+            tools:ignore="ImageContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

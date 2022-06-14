@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">ResistorColorCode</string>
+    <string name="splashtext">Resister Color Code</string>
+    <string name="optionConver">Convertir de:</string>
+    <string name="valueToColor">Valores a colores</string>
+    <string name="colorToValue" >Colores a valores</string>
+    <string name="todo">TODO</string>
+    <string name="band1">Primera banda</string>
+    <string name="band2">Segunda banda</string>
+    <string name="multiplier">Multiplicador</string>
+    <string name="tolerance">Tolerancia</string>
+    <string name="calculate">Calcular</string>
+    <string name="voidText" />
+
+    <!--STRING ARRAY-->
+    <string-array name="digits_list">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="multiplier_list">
+        <item>0.01</item>
+        <item>0.1</item>
+        <item>1</item>
+        <item>10</item>
+        <item>100</item>
+        <item>1 K</item>
+        <item>10 K</item>
+        <item>100 K</item>
+        <item>1 M</item>
+        <item>10 M</item>
+        <item>100 M</item>
+        <item>1 G</item>
+    </string-array>
+    <string-array name="tolerance_list">
+        <item>1%</item>
+        <item>2%</item>
+        <item>5%</item>
+        <item>10%</item>
+    </string-array>
+
+    <string-array name="color_band">
+        <item>Negro</item>
+        <item>Café</item>
+        <item>Rojo</item>
+        <item>Naranja</item>
+        <item>Amarillo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+        <item>Morado</item>
+        <item>Gris</item>
+        <item>Blanco</item>
+    </string-array>
+
+    <string-array name="color_multiplier">
+        <item>Dorado</item>
+        <item>Plateado</item>
+        <item>Negro</item>
+        <item>Café</item>
+        <item>Rojo</item>
+        <item>Naranja</item>
+        <item>Amarillo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+        <item>Morado</item>
+        <item>Gris</item>
+        <item>Blanco</item>
+    </string-array>
+
+    <string-array name="color_tolerance">
+        <item>Café</item>
+        <item>Rojo</item>
+        <item>Dorado</item>
+        <item>Plateado</item>
+    </string-array>
+
+
+</resources>
